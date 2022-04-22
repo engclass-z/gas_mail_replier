@@ -6,12 +6,13 @@
   "author": "iroha project",
   "license": "MIT",
   "scripts": {
+    "generate": "clasp create --title gas_mail_replier --rootDir src --type standalone && mv ./src/.clasp.json .",
     "open": "clasp open",
     "push": "clasp push",
     "lint": "run-s lint:*",
     "lint:ts": "eslint --fix --ext ts src",
     "lint:prettier": "prettier --write **/*.{ts,json,md}",
-    "prepare": "husky install && clasp create --title gas_mail_replier --rootDir src --type standalone && mv ./src/.clasp.json ."
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.ts": "eslint --fix",

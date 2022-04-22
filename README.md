@@ -51,6 +51,7 @@ GAS を利用してメールの自動返信を行うスクリプト
 $ npm install -g @google/clasp
 $ clasp login
 $ yarn
+$ yarn generate
 ```
 
 ## コマンド
